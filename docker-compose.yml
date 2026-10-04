@@ -1,0 +1,12 @@
+#version: '2'
+
+services:
+  de-final-prj-local:
+    image: cr.yandex/crp1r8pht0n0gl25aug1/de-final-prj:latest
+    ports:
+      - 8998:8998
+      - 8280:8280
+    volumes:
+      - ./src/dags:/lessons/dags
+      - ./certs:/certs:ro
+
